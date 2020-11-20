@@ -9,9 +9,6 @@ cloudinary.config({
     api_secret: process.env.API_SECRET
 });
 
-
-const api_key = process.env.API_KEY;
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 const uploads = multer({ dest: './uploads' });
